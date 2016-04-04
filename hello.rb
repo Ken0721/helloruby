@@ -80,4 +80,62 @@ else
 end
 
 
+# for each
+for i,j in sales1 do
+    puts "#{i}: #{j}"
+end
+
+# functional method
+def sayHi(name1="ken")
+    puts "Hello#{name1}"
+end
+
+sayHi("jonson")
+#p name1
+
+#class and instance
+
+class User
+@@count = 0
+
+   def initialize(name="ken") 
+        @name = name ##instance variables
+        @@count += 1 ##class variables
+   end
+    attr_accessor :name
+   def sayHi1()
+        puts %Q(#{@name})
+   end
+    
+   #instance method
+   def User.sayHi2()
+        puts "Hello Ruby world."
+        puts "#{@@count}"
+   end
+end
+
+testuser = User.new("Johnson")
+testuser.sayHi1()
+
+User.sayHi2()
+
+testuser2 = User.new()
+testuser3 = User.new()
+User.sayHi2()
+
+p testuser3.name
+testuser3.name = "yamad"
+p testuser3.name
+
+t = Time.now
+
+p t
+p t.year
+p t.month
+p t.day
+
+t = Time.new(2013, 12, 25, 12, 32, 22)
+p t
+
+p t.strftime("updated: %Y-%m/%d-%H:%M")
 
