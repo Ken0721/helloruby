@@ -66,4 +66,18 @@ end
 
 p sales1.values if sales1.has_key?(:ken)
 
+##case : conditional
+
+case "#{@name}"
+when "tama"
+
+when "shingo"
+
+when "ken"
+    p"correct this is ken"
+else
+    p "didnt match"
+end
+
+
 
