@@ -21,7 +21,7 @@ Find.find("./"){|f|
   if ARGV[0] == tmp then
     flag = 1
     break
-  elsif tmp=~/^cdsPak.*rpm\z/ then
+  else
     flag = 0
     next
   end
@@ -32,17 +32,17 @@ if flag == 0
   exit (1)
 end
 
-words=0
-w_num=0
 File.open(ARGV[0]).each_line do |line|
+  words=0
+  w_num=0
   line.chomp!
   words = line.split(/\s+/).reject{|w| w.empty?}
-  w_num += words.size
-  if w_num == 1
-    puts "#{words}"
-    puts "#{w_num}"
-  elsif
-    puts "#{words}"
-    puts "#{w_num}"
+  w_num = words.size
+  if w_num == 0
+    next
+  elsif w_num == 1
+    next
+  else
+    puts words[w_num-2]
   end
 end
