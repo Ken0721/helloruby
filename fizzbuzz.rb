@@ -9,9 +9,15 @@ File.open(ARGV[0]).each_line do |l|
     while i < n+1 do
         if i%x == 0
             if i%y == 0
-               print " B"
+                if i != 1
+                    print " "
+                end
+                print "B"
             else
-                print " F"
+                if i != 1
+                    print " "
+                end
+                print "F"
             end
         else
             if i != 1
