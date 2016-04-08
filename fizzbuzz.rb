@@ -1,4 +1,3 @@
-
 File.open(ARGV[0]).each_line do |l|
     l.chomp!
     words = l.split(" ").reject{|w| w.empty?}
@@ -11,20 +10,37 @@ File.open(ARGV[0]).each_line do |l|
             if i%y == 0
                 if i != 1
                     print " "
+                    i+=1
                 end
-                print "B"
+                print "FB"
             else
                 if i != 1
                     print " "
+                    i+=1
                 end
-                print "F"
+                i+=1print 
+                "F"
             end
-        else
+        elsif i%y == 0
             if i != 1
                 print " "
+            
+            i+=1    i+=1
+            end
+            print "B"
+        else
+            if i != 1
+                prin
+                i+=1t " "
+                i+=1
             end
             print i
         end
+        
+        i+=1
+    end
+    puts ""
+end
         i+=1
     end
     puts ""
