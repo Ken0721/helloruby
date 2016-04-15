@@ -6,7 +6,6 @@ class Library
     end
 
     def addBook(book)
-#        p book.title
         @books.push(book)
     end
 
@@ -14,8 +13,7 @@ class Library
 #        puts "test"
 #        p @books
         for b in @books do
-#            p "test"
-            puts "Title:" + b.title + ", "  + "Author:" + b.author
+            "Title:" + b.title + ", "  + "Author:" + b.author
         end
     end
 
@@ -28,7 +26,6 @@ class Book
         @title = args[:title]
         @library = args[:library]
         @library.addBook(self)
-     #   p self.title
     end
 end
 
