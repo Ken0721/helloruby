@@ -23,3 +23,7 @@ http://matome.naver.jp/odai/2136547862257972101
 http://type.jp/et/log/article/24
 http://railstutorial.jp/chapters/beginning?version=4.2#sec-development_environment
 https://www.railstutorial.org/book/frontmatter
+
+rails on vm 
+http://stackoverflow.com/questions/28668436/how-to-change-the-default-binding-ip-of-rails-4-2-development-server
+http://stackoverflow.com/questions/30722372/how-to-access-guests-port-3000-from-host
